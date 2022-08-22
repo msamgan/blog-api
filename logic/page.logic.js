@@ -1,9 +1,19 @@
 const { Page } = require("../models")
 
 /**
- * Finds the page with the given slug.           
- * @param {string} pageSlug - the slug of the page to find.           
- * @returns {Promise<Page>} - the page with the given slug.           
+ * Returns an array of all published pages.
+ * @returns {Promise<Page[]>} - An array of all published pages.
+ */
+exports.publishedPages = async () => {
+    return await Page.findAll({
+        attributes: ["title", "slug"]
+    })
+}
+
+/**
+ * Finds the page with the given slug.
+ * @param {string} pageSlug - the slug of the page to find.
+ * @returns {Promise<Page>} - the page with the given slug.
  */
 exports.publishedPage = async (pageSlug) => {
     return await Page.findOne({
