@@ -16,9 +16,13 @@ exports.publishedPages = async () => {
  * @returns {Promise<Page>} - the page with the given slug.
  */
 exports.publishedPage = async (pageSlug) => {
-    return await Page.findOne({
+    let page = await Page.findOne({
         where: {
             slug: pageSlug
         }
     })
+
+    page.setDataValue("meta", JSON.parse(page.meta))
+
+    return page
 }
