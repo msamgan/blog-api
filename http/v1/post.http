@@ -1,0 +1,11 @@
+GET http://127.0.0.1:5100/v1/posts HTTP/1.1
+
+###
+GET http://127.0.0.1:5100/v1/posts/tag/laravel HTTP/1.1
+
+###
+GET http://127.0.0.1:5100/v1/posts/tags?tags=laravel,vscode HTTP/1.1
+
+
+###
+GET http://127.0.0.1:5100/v1/posts/post/rare-and-extra-ordinary-must-have-vs-code-extensions HTTP/1.1
