@@ -3,4 +3,4 @@ node_modules
 .idea
 site
 dist
-./config/config.json
+config/config.json
