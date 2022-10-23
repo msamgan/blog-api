@@ -1,0 +1,24 @@
+{
+    "development": {
+        "username": "root",
+        "password": "",
+        "database": "cbs",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "logging": false
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "msamgan",
+        "password": "wFEifH7y4tB0ulru",
+        "database": "cbs",
+        "host": "206.189.103.123",
+        "dialect": "mysql"
+    }
+}
